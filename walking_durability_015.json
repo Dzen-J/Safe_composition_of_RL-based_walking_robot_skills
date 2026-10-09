@@ -1,0 +1,174 @@
+{
+  "summary": {
+    "walk_vel": 0.15,
+    "fall_tilt_threshold_deg": 60.0,
+    "n_trials": 20,
+    "survived_full_30s": 0,
+    "survival_rate": 0.0,
+    "median_time_to_fall_s": 2.0100000000000002,
+    "min_time_to_fall_s": 1.3,
+    "p10_time_to_fall_s": 1.686
+  },
+  "episodes": [
+    {
+      "trial": 0,
+      "fell_at_step": 121,
+      "duration_s": 2.42,
+      "survived_full": false,
+      "max_tilt_deg": 63.3210225710626,
+      "min_height_m": 0.04455225210080555
+    },
+    {
+      "trial": 1,
+      "fell_at_step": 92,
+      "duration_s": 1.84,
+      "survived_full": false,
+      "max_tilt_deg": 62.001690178012694,
+      "min_height_m": 0.08956823923386344
+    },
+    {
+      "trial": 2,
+      "fell_at_step": 65,
+      "duration_s": 1.3,
+      "survived_full": false,
+      "max_tilt_deg": 65.68204153795067,
+      "min_height_m": 0.07029996043675814
+    },
+    {
+      "trial": 3,
+      "fell_at_step": 124,
+      "duration_s": 2.48,
+      "survived_full": false,
+      "max_tilt_deg": 62.16349720628369,
+      "min_height_m": 0.08680628082102708
+    },
+    {
+      "trial": 4,
+      "fell_at_step": 88,
+      "duration_s": 1.76,
+      "survived_full": false,
+      "max_tilt_deg": 61.07537827350658,
+      "min_height_m": 0.11234500233365684
+    },
+    {
+      "trial": 5,
+      "fell_at_step": 121,
+      "duration_s": 2.42,
+      "survived_full": false,
+      "max_tilt_deg": 68.30571161408183,
+      "min_height_m": 0.05595416283572895
+    },
+    {
+      "trial": 6,
+      "fell_at_step": 98,
+      "duration_s": 1.96,
+      "survived_full": false,
+      "max_tilt_deg": 65.2455520175932,
+      "min_height_m": 0.0985455471839508
+    },
+    {
+      "trial": 7,
+      "fell_at_step": 118,
+      "duration_s": 2.36,
+      "survived_full": false,
+      "max_tilt_deg": 62.56376765951353,
+      "min_height_m": 0.09190133666487657
+    },
+    {
+      "trial": 8,
+      "fell_at_step": 104,
+      "duration_s": 2.08,
+      "survived_full": false,
+      "max_tilt_deg": 62.012040334800744,
+      "min_height_m": 0.10480308314374993
+    },
+    {
+      "trial": 9,
+      "fell_at_step": 94,
+      "duration_s": 1.8800000000000001,
+      "survived_full": false,
+      "max_tilt_deg": 60.9726750939207,
+      "min_height_m": 0.09835858520881789
+    },
+    {
+      "trial": 10,
+      "fell_at_step": 112,
+      "duration_s": 2.24,
+      "survived_full": false,
+      "max_tilt_deg": 64.66824704602251,
+      "min_height_m": 0.05732609574207484
+    },
+    {
+      "trial": 11,
+      "fell_at_step": 114,
+      "duration_s": 2.2800000000000002,
+      "survived_full": false,
+      "max_tilt_deg": 64.00388595495394,
+      "min_height_m": 0.1023307709643052
+    },
+    {
+      "trial": 12,
+      "fell_at_step": 86,
+      "duration_s": 1.72,
+      "survived_full": false,
+      "max_tilt_deg": 67.07153448284389,
+      "min_height_m": 0.06571373970236957
+    },
+    {
+      "trial": 13,
+      "fell_at_step": 101,
+      "duration_s": 2.02,
+      "survived_full": false,
+      "max_tilt_deg": 63.39303089489524,
+      "min_height_m": 0.0998965465921345
+    },
+    {
+      "trial": 14,
+      "fell_at_step": 93,
+      "duration_s": 1.86,
+      "survived_full": false,
+      "max_tilt_deg": 60.32482215834689,
+      "min_height_m": 0.09923596112443221
+    },
+    {
+      "trial": 15,
+      "fell_at_step": 69,
+      "duration_s": 1.3800000000000001,
+      "survived_full": false,
+      "max_tilt_deg": 63.601767932303325,
+      "min_height_m": 0.10740562893674546
+    },
+    {
+      "trial": 16,
+      "fell_at_step": 100,
+      "duration_s": 2.0,
+      "survived_full": false,
+      "max_tilt_deg": 62.72673732234921,
+      "min_height_m": 0.10328949279238137
+    },
+    {
+      "trial": 17,
+      "fell_at_step": 168,
+      "duration_s": 3.36,
+      "survived_full": false,
+      "max_tilt_deg": 64.26713353923394,
+      "min_height_m": 0.09511106765763869
+    },
+    {
+      "trial": 18,
+      "fell_at_step": 130,
+      "duration_s": 2.6,
+      "survived_full": false,
+      "max_tilt_deg": 63.220254334085475,
+      "min_height_m": 0.10502770669523426
+    },
+    {
+      "trial": 19,
+      "fell_at_step": 99,
+      "duration_s": 1.98,
+      "survived_full": false,
+      "max_tilt_deg": 64.50402348025604,
+      "min_height_m": 0.04963427680984608
+    }
+  ]
+}
