@@ -1,4 +1,3 @@
-# scripts/naive_switch_experiment_v3.py
 """
 Naive vs filtered policy switching.
 
@@ -190,7 +189,7 @@ def run_episode(model, data, policy, trunk_body_id, switch_step, walk_vel,
                         rec["filter_vetoes"] += 1
                         rec["veto_reasons"].append((step, reason))
 
-                else:  # comparative
+                else:
                     should_switch, reason, cur_t, tgt_t, dt = (
                         safety_filter.check_switch_comparative(
                             policy,

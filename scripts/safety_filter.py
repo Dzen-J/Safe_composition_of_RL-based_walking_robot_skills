@@ -1,4 +1,3 @@
-# scripts/safety_filter.py
 """
 Predictive safety filter for policy switching on Microduck — v3.
 
@@ -53,17 +52,11 @@ class SafetyFilter:
         self.decimation = decimation
         self.margin_deg = margin_deg
         self.verify_no_leak = verify_no_leak
-
-        # Separate MjData for shadow rollout
         self.data_shadow = mujoco.MjData(model)
         self.data_shadow = mujoco.MjData(model)
 
         self.latencies_s = []
         self.leak_warnings = 0
-
-    # ------------------------------------------------------------------
-    # Helpers: tilt / height — now take explicit data argument
-    # ------------------------------------------------------------------
 
     @staticmethod
     def _tilt_deg(model, data, trunk_body_id):
@@ -84,7 +77,7 @@ class SafetyFilter:
         return float(self.data_shadow.qpos[self.qpos_adr + 2])
 
     # ------------------------------------------------------------------
-    # Sync real → shadow
+    # Sync real -> shadow
     # ------------------------------------------------------------------
 
     def _sync_shadow_from_real(self):
@@ -111,7 +104,7 @@ class SafetyFilter:
             "last_action": policy.last_action.copy(),
             "input_name": policy.input_name,
             "output_name": policy.output_name,
-            "data_ref": policy.data,  # for swapping to shadow
+            "data_ref": policy.data,
         }
 
     def _restore_policy(self, policy, psnap):
@@ -142,20 +135,12 @@ class SafetyFilter:
         Run a shadow rollout on self.data_shadow. Real data is untouched.
         Returns (max_tilt_deg, min_height_m, early_stop_bool).
         """
-        # Optionally verify no leak by capturing real qpos before / after
         if self.verify_no_leak:
             real_qpos_before = self.data.qpos.copy()
 
-        # 1. Sync real → shadow
         self._sync_shadow_from_real()
 
-        # 2. Snapshot policy and swap to shadow + target session
-        # 2. Snapshot policy and swap to shadow + target session
         psnap = self._snapshot_policy(policy)
-        # Snapshot bam_ctrl.q_target — it lives in Python, not in MjData,
-        # and policy.apply_action() mutates it directly. Without restore,
-        # the real simulation continues with shadow's q_target on the next
-        # real step, causing trajectory divergence.
         bam_q_target_save = (policy.bam_ctrl.q_target.copy()
         if policy.bam_ctrl is not None else None)
         policy.data = self.data_shadow
@@ -172,9 +157,8 @@ class SafetyFilter:
         try:
             for step in range(self.horizon):
                 action = policy.infer()
-                policy.apply_action(action)  # writes to bam_ctrl.q_target
+                policy.apply_action(action) 
 
-                # Compute PD torque from q_target, step shadow physics
                 if policy.bam_ctrl is not None:
                     q_target = policy.bam_ctrl.q_target
                     torque = self._pd_torque_on_shadow(policy, q_target)
@@ -194,17 +178,15 @@ class SafetyFilter:
                     early_stop = True
                     break
         finally:
-            # 3. Restore policy (including .data reference back to real)
             if policy.bam_ctrl is not None and bam_q_target_save is not None:
                 policy.bam_ctrl.q_target[:] = bam_q_target_save
             self._restore_policy(policy, psnap)
 
-        # 4. Verify real data untouched
         if self.verify_no_leak:
             diff = float(np.max(np.abs(self.data.qpos - real_qpos_before)))
             if diff > 1e-12:
                 self.leak_warnings += 1
-                if self.leak_warnings <= 3:  # avoid spam
+                if self.leak_warnings <= 3: 
                     print(f"  [WARN] shadow leaked into real qpos: max|Δ|={diff:.3e}")
 
         return max_tilt, min_h, early_stop

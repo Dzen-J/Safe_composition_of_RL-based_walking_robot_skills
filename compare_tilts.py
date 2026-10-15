@@ -1,4 +1,3 @@
-# compare_tilts_v2.py
 """
 Correct leak check: match naive/filtered trials by (switch_step, trial),
 and only verify that trajectories match up to the moment of switch.
