@@ -1,0 +1,74 @@
+{
+  "config": {
+    "policies_dir": "C:\\Users\\rusbe\\microduck-research\\policies\\official",
+    "from_policy": "walking",
+    "to_policy": "standing",
+    "walk_vel": 0.25,
+    "switch_steps": [
+      90
+    ],
+    "trials": 1,
+    "seed": 0,
+    "use_filter": true,
+    "filter_horizon": 10,
+    "filter_tilt_max": 45.0,
+    "filter_height_min": 0.08,
+    "filter_emergency_tilt": 45.0,
+    "out": "smoke_test_filtered_v2.json"
+  },
+  "filter_enabled": true,
+  "summary": {
+    "90": {
+      "n": 1,
+      "fall_rate": 1.0,
+      "mean_steps_after_switch": 3.0,
+      "mean_min_height_mm": 60.00548145299763,
+      "mean_max_tilt_deg": 75.2563693645666,
+      "mean_max_torque_nm": 0.8855141470524482,
+      "mean_pre_switch_tilt_deg": 44.79427270312386,
+      "mean_filter_checks": 3.0,
+      "mean_filter_vetoes": 2.0,
+      "emergency_forced_count": 1,
+      "mean_switch_delay_steps": 2.0,
+      "filter_latency_p50_ms": 1.2509000007412396,
+      "filter_latency_p95_ms": 1.8072800005029421,
+      "filter_latency_max_ms": 1.8691000004764646
+    }
+  },
+  "episodes": [
+    {
+      "switch_step": 90,
+      "from": "walking",
+      "to": "standing",
+      "fell": true,
+      "fell_at_step": 95,
+      "steps_after_switch": 3,
+      "max_torque_nm": 0.8855141470524482,
+      "min_height_m": 0.060005481452997625,
+      "max_tilt_deg": 75.2563693645666,
+      "switched": true,
+      "switch_actual_step": 92,
+      "switch_delay": 2,
+      "filter_checks": 3,
+      "filter_vetoes": 2,
+      "emergency_forced": true,
+      "pre_switch_tilt_max_deg": 44.79427270312386,
+      "filter_latencies_ms": [
+        1.8691000004764646,
+        1.2509000007412396,
+        0.6795000008423813
+      ],
+      "veto_reasons": [
+        [
+          90,
+          "pred tilt 45.1\u00b0 > 45\u00b0 @ s1"
+        ],
+        [
+          91,
+          "pred tilt 45.2\u00b0 > 45\u00b0 @ s1"
+        ]
+      ],
+      "trial": 0
+    }
+  ]
+}

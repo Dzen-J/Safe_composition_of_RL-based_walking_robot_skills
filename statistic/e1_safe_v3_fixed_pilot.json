@@ -1,0 +1,1158 @@
+{
+  "config": {
+    "policies_dir": "C:\\Users\\rusbe\\microduck-research\\policies\\official",
+    "from_policy": "walking",
+    "to_policy": "standing",
+    "walk_vel": 0.25,
+    "switch_steps": [
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80
+    ],
+    "trials": 5,
+    "seed": 0,
+    "use_filter": true,
+    "filter_mode": "comparative",
+    "filter_horizon": 30,
+    "filter_tilt_max": 45.0,
+    "filter_height_min": 0.08,
+    "filter_emergency_tilt": 45.0,
+    "filter_margin_deg": 5.0,
+    "out": "e1_safe_v3_fixed_pilot.json"
+  },
+  "filter_enabled": true,
+  "filter_mode": "comparative",
+  "summary": {
+    "20": {
+      "n": 5,
+      "fall_rate": 0.0,
+      "mean_steps_after_switch": 377.6,
+      "mean_min_height_mm": 113.49317973082822,
+      "mean_max_tilt_deg": 6.403829812996915,
+      "mean_max_torque_nm": 0.6625805953915689,
+      "mean_pre_switch_tilt_deg": 6.2780814758168795,
+      "mean_filter_checks": 2.4,
+      "mean_filter_vetoes": 1.4,
+      "emergency_forced_count": 0,
+      "mean_switch_delay_steps": 1.4,
+      "filter_latency_p50_ms": 16.293699998641387,
+      "filter_latency_p95_ms": 17.59993999985454,
+      "filter_latency_max_ms": 17.921799997566268
+    },
+    "30": {
+      "n": 5,
+      "fall_rate": 0.0,
+      "mean_steps_after_switch": 368.6,
+      "mean_min_height_mm": 100.96164373609695,
+      "mean_max_tilt_deg": 37.92395388917008,
+      "mean_max_torque_nm": 0.7981656505865631,
+      "mean_pre_switch_tilt_deg": 5.557428863488416,
+      "mean_filter_checks": 1.4,
+      "mean_filter_vetoes": 0.4,
+      "emergency_forced_count": 0,
+      "mean_switch_delay_steps": 0.4,
+      "filter_latency_p50_ms": 15.705899997556116,
+      "filter_latency_p95_ms": 18.37096000090241,
+      "filter_latency_max_ms": 19.230400001106318
+    },
+    "40": {
+      "n": 5,
+      "fall_rate": 0.0,
+      "mean_steps_after_switch": 358.4,
+      "mean_min_height_mm": 100.77158899403331,
+      "mean_max_tilt_deg": 37.75756224319261,
+      "mean_max_torque_nm": 0.8006029082552827,
+      "mean_pre_switch_tilt_deg": 6.8061148865361245,
+      "mean_filter_checks": 1.6,
+      "mean_filter_vetoes": 0.6,
+      "emergency_forced_count": 0,
+      "mean_switch_delay_steps": 0.6,
+      "filter_latency_p50_ms": 14.936850002413848,
+      "filter_latency_p95_ms": 16.66551499911293,
+      "filter_latency_max_ms": 16.852100001415238
+    },
+    "50": {
+      "n": 5,
+      "fall_rate": 0.4,
+      "mean_steps_after_switch": 251.8,
+      "mean_min_height_mm": 97.06867646034935,
+      "mean_max_tilt_deg": 59.75917446222726,
+      "mean_max_torque_nm": 0.918645638782005,
+      "mean_pre_switch_tilt_deg": 8.079552371401636,
+      "mean_filter_checks": 1.2,
+      "mean_filter_vetoes": 0.2,
+      "emergency_forced_count": 0,
+      "mean_switch_delay_steps": 0.2,
+      "filter_latency_p50_ms": 16.246200000750832,
+      "filter_latency_p95_ms": 17.133074999946984,
+      "filter_latency_max_ms": 17.16080000187503
+    },
+    "60": {
+      "n": 5,
+      "fall_rate": 0.0,
+      "mean_steps_after_switch": 338.8,
+      "mean_min_height_mm": 95.05598827251619,
+      "mean_max_tilt_deg": 48.35671262229192,
+      "mean_max_torque_nm": 0.9376397236147301,
+      "mean_pre_switch_tilt_deg": 12.423849598573144,
+      "mean_filter_checks": 1.2,
+      "mean_filter_vetoes": 0.2,
+      "emergency_forced_count": 0,
+      "mean_switch_delay_steps": 0.2,
+      "filter_latency_p50_ms": 14.254649999202229,
+      "filter_latency_p95_ms": 16.95632499831845,
+      "filter_latency_max_ms": 17.58469999913359
+    },
+    "70": {
+      "n": 5,
+      "fall_rate": 0.2,
+      "mean_steps_after_switch": 263.0,
+      "mean_min_height_mm": 83.09079903468017,
+      "mean_max_tilt_deg": 65.81743138992395,
+      "mean_max_torque_nm": 0.9634015946604082,
+      "mean_pre_switch_tilt_deg": 29.822807116202476,
+      "mean_filter_checks": 3.0,
+      "mean_filter_vetoes": 2.0,
+      "emergency_forced_count": 1,
+      "mean_switch_delay_steps": 2.0,
+      "filter_latency_p50_ms": 5.043999997724313,
+      "filter_latency_p95_ms": 12.647770000330636,
+      "filter_latency_max_ms": 13.453400002617855
+    },
+    "80": {
+      "n": 5,
+      "fall_rate": 0.0,
+      "mean_steps_after_switch": 318.8,
+      "mean_min_height_mm": 90.9752498828397,
+      "mean_max_tilt_deg": 52.228337220199286,
+      "mean_max_torque_nm": 0.9190505390314373,
+      "mean_pre_switch_tilt_deg": 29.75575356941234,
+      "mean_filter_checks": 1.2,
+      "mean_filter_vetoes": 0.2,
+      "emergency_forced_count": 0,
+      "mean_switch_delay_steps": 0.2,
+      "filter_latency_p50_ms": 14.600149999751011,
+      "filter_latency_p95_ms": 18.3096500022657,
+      "filter_latency_max_ms": 18.335200002184138
+    }
+  },
+  "episodes": [
+    {
+      "switch_step": 20,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 379,
+      "max_torque_nm": 0.47314350016515094,
+      "min_height_m": 0.11295140834198387,
+      "max_tilt_deg": 4.951215047545899,
+      "switched": true,
+      "switch_actual_step": 20,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 4.32247336164572,
+      "filter_latencies_ms": [
+        17.921799997566268
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 61.65025383811382,
+      "comparative_tgt_tilt_at_switch": 24.01686044911073,
+      "trial": 0
+    },
+    {
+      "switch_step": 20,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 378,
+      "max_torque_nm": 0.5914899103160534,
+      "min_height_m": 0.11367120406906359,
+      "max_tilt_deg": 5.432337971871006,
+      "switched": true,
+      "switch_actual_step": 21,
+      "switch_delay": 1,
+      "filter_checks": 2,
+      "filter_vetoes": 1,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 5.432337971871006,
+      "filter_latencies_ms": [
+        17.245099996216595,
+        14.398900006199256
+      ],
+      "veto_reasons": [
+        [
+          20,
+          "target early stop: tilt=75.8\u00b0 h=89mm"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 71.81269316637683,
+      "comparative_tgt_tilt_at_switch": 17.39937367355107,
+      "trial": 1
+    },
+    {
+      "switch_step": 20,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 376,
+      "max_torque_nm": 0.6430424816394853,
+      "min_height_m": 0.11552394384707122,
+      "max_tilt_deg": 8.955762937769236,
+      "switched": true,
+      "switch_actual_step": 23,
+      "switch_delay": 3,
+      "filter_checks": 4,
+      "filter_vetoes": 3,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 8.955762937769236,
+      "filter_latencies_ms": [
+        16.132699995068833,
+        17.336600001726765,
+        16.707000002497807,
+        16.607700003078207
+      ],
+      "veto_reasons": [
+        [
+          20,
+          "target early stop: tilt=70.7\u00b0 h=55mm"
+        ],
+        [
+          21,
+          "target not better: tgt=62.0\u00b0 vs cur=63.7\u00b0"
+        ],
+        [
+          22,
+          "target not better: tgt=51.7\u00b0 vs cur=26.4\u00b0"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 54.282090522821804,
+      "comparative_tgt_tilt_at_switch": 20.546044863264733,
+      "trial": 2
+    },
+    {
+      "switch_step": 20,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 379,
+      "max_torque_nm": 0.7970560346238607,
+      "min_height_m": 0.11209353154918802,
+      "max_tilt_deg": 7.064141464834064,
+      "switched": true,
+      "switch_actual_step": 20,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 7.064141464834064,
+      "filter_latencies_ms": [
+        15.879899998253677
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 70.99251296646408,
+      "comparative_tgt_tilt_at_switch": 33.523971315930105,
+      "trial": 3
+    },
+    {
+      "switch_step": 20,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 376,
+      "max_torque_nm": 0.8081710502132948,
+      "min_height_m": 0.11322581084683436,
+      "max_tilt_deg": 5.615691642964368,
+      "switched": true,
+      "switch_actual_step": 23,
+      "switch_delay": 3,
+      "filter_checks": 4,
+      "filter_vetoes": 3,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 5.615691642964368,
+      "filter_latencies_ms": [
+        16.45470000221394,
+        16.070500001660548,
+        15.531199998804368,
+        14.622299997427035
+      ],
+      "veto_reasons": [
+        [
+          20,
+          "target not better: tgt=60.1\u00b0 vs cur=60.4\u00b0"
+        ],
+        [
+          21,
+          "target not better: tgt=60.4\u00b0 vs cur=22.3\u00b0"
+        ],
+        [
+          22,
+          "target early stop: tilt=70.8\u00b0 h=91mm"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 75.20841931207858,
+      "comparative_tgt_tilt_at_switch": 49.00763283078411,
+      "trial": 4
+    },
+    {
+      "switch_step": 30,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 368,
+      "max_torque_nm": 0.5629401335448095,
+      "min_height_m": 0.11379579750886691,
+      "max_tilt_deg": 5.61828819240595,
+      "switched": true,
+      "switch_actual_step": 31,
+      "switch_delay": 1,
+      "filter_checks": 2,
+      "filter_vetoes": 1,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 5.61828819240595,
+      "filter_latencies_ms": [
+        15.705899997556116,
+        19.230400001106318
+      ],
+      "veto_reasons": [
+        [
+          30,
+          "target early stop: tilt=71.4\u00b0 h=71mm"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 72.65387764663211,
+      "comparative_tgt_tilt_at_switch": 40.67418216021622,
+      "trial": 0
+    },
+    {
+      "switch_step": 30,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 369,
+      "max_torque_nm": 0.9612134186419453,
+      "min_height_m": 0.09560731472670145,
+      "max_tilt_deg": 60.042284414984735,
+      "switched": true,
+      "switch_actual_step": 30,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 6.9833561727255375,
+      "filter_latencies_ms": [
+        15.003600005002227
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 75.11088515854209,
+      "comparative_tgt_tilt_at_switch": 36.46352320076554,
+      "trial": 1
+    },
+    {
+      "switch_step": 30,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 368,
+      "max_torque_nm": 0.5398715114252445,
+      "min_height_m": 0.11380715472645422,
+      "max_tilt_deg": 5.523580732525607,
+      "switched": true,
+      "switch_actual_step": 31,
+      "switch_delay": 1,
+      "filter_checks": 2,
+      "filter_vetoes": 1,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 5.523580732525607,
+      "filter_latencies_ms": [
+        16.36560000042664,
+        15.024100001028273
+      ],
+      "veto_reasons": [
+        [
+          30,
+          "target not better: tgt=53.1\u00b0 vs cur=19.5\u00b0"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 79.37794863457873,
+      "comparative_tgt_tilt_at_switch": 22.118379814514384,
+      "trial": 2
+    },
+    {
+      "switch_step": 30,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 369,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08920891758374842,
+      "max_tilt_deg": 60.344872382409264,
+      "switched": true,
+      "switch_actual_step": 30,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 5.027925116468043,
+      "filter_latencies_ms": [
+        15.768100005516317
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 74.31290271465369,
+      "comparative_tgt_tilt_at_switch": 45.08152628147293,
+      "trial": 3
+    },
+    {
+      "switch_step": 30,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 369,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.09238903413471374,
+      "max_tilt_deg": 58.090743723524845,
+      "switched": true,
+      "switch_actual_step": 30,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 4.6339941033169385,
+      "filter_latencies_ms": [
+        15.534099999058526
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 73.3760196126986,
+      "comparative_tgt_tilt_at_switch": 62.48603672891216,
+      "trial": 4
+    },
+    {
+      "switch_step": 40,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 359,
+      "max_torque_nm": 0.5502739349004238,
+      "min_height_m": 0.11421812734113053,
+      "max_tilt_deg": 5.257895335091717,
+      "switched": true,
+      "switch_actual_step": 40,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 5.257895335091717,
+      "filter_latencies_ms": [
+        16.852100001415238
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 25.80564992603252,
+      "comparative_tgt_tilt_at_switch": 20.11835492643727,
+      "trial": 0
+    },
+    {
+      "switch_step": 40,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 359,
+      "max_torque_nm": 0.5637448698036203,
+      "min_height_m": 0.11547103276556009,
+      "max_tilt_deg": 6.482330682740712,
+      "switched": true,
+      "switch_actual_step": 40,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 6.265211192419073,
+      "filter_latencies_ms": [
+        16.318999994837213
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 17.643716590954213,
+      "comparative_tgt_tilt_at_switch": 29.94237062948607,
+      "trial": 1
+    },
+    {
+      "switch_step": 40,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 358,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.09272795278023704,
+      "max_tilt_deg": 65.9308153900823,
+      "switched": true,
+      "switch_actual_step": 41,
+      "switch_delay": 1,
+      "filter_checks": 2,
+      "filter_vetoes": 1,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 6.894527807941112,
+      "filter_latencies_ms": [
+        11.138699999719393,
+        15.909499998087995
+      ],
+      "veto_reasons": [
+        [
+          40,
+          "target early stop: tilt=75.5\u00b0 h=89mm"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 76.58730077174886,
+      "comparative_tgt_tilt_at_switch": 63.898423404727126,
+      "trial": 2
+    },
+    {
+      "switch_step": 40,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 359,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08941718611321134,
+      "max_tilt_deg": 59.321296754612995,
+      "switched": true,
+      "switch_actual_step": 40,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 6.849894491870115,
+      "filter_latencies_ms": [
+        14.215800001693424
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 70.81546468403855,
+      "comparative_tgt_tilt_at_switch": 51.63051468964144,
+      "trial": 3
+    },
+    {
+      "switch_step": 40,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 357,
+      "max_torque_nm": 0.962192547251553,
+      "min_height_m": 0.09202364597002757,
+      "max_tilt_deg": 51.79547305343533,
+      "switched": true,
+      "switch_actual_step": 42,
+      "switch_delay": 2,
+      "filter_checks": 3,
+      "filter_vetoes": 2,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 8.763045605358604,
+      "filter_latencies_ms": [
+        11.101199997938238,
+        15.657900003134273,
+        13.51289999729488
+      ],
+      "veto_reasons": [
+        [
+          40,
+          "target early stop: tilt=76.4\u00b0 h=75mm"
+        ],
+        [
+          41,
+          "target early stop: tilt=73.5\u00b0 h=88mm"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 70.09469535338395,
+      "comparative_tgt_tilt_at_switch": 55.92173328391023,
+      "trial": 4
+    },
+    {
+      "switch_step": 50,
+      "from": "walking",
+      "to": "standing",
+      "fell": true,
+      "fell_at_step": 224,
+      "steps_after_switch": 173,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.09115092208306665,
+      "max_tilt_deg": 75.35453188227376,
+      "switched": true,
+      "switch_actual_step": 51,
+      "switch_delay": 1,
+      "filter_checks": 2,
+      "filter_vetoes": 1,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 8.303763287959276,
+      "filter_latencies_ms": [
+        17.049899994162843,
+        15.599300000758376
+      ],
+      "veto_reasons": [
+        [
+          50,
+          "target not better: tgt=55.6\u00b0 vs cur=19.1\u00b0"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 73.32796172234359,
+      "comparative_tgt_tilt_at_switch": 32.574452241127744,
+      "trial": 0
+    },
+    {
+      "switch_step": 50,
+      "from": "walking",
+      "to": "standing",
+      "fell": true,
+      "fell_at_step": 89,
+      "steps_after_switch": 39,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.0993437266412611,
+      "max_tilt_deg": 75.89270923752669,
+      "switched": true,
+      "switch_actual_step": 50,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 5.822883242890389,
+      "filter_latencies_ms": [
+        15.256100006808992
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 72.96829463754952,
+      "comparative_tgt_tilt_at_switch": 61.20491122891408,
+      "trial": 1
+    },
+    {
+      "switch_step": 50,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 349,
+      "max_torque_nm": 0.9361865365994767,
+      "min_height_m": 0.0907258817118991,
+      "max_tilt_deg": 68.66699235780673,
+      "switched": true,
+      "switch_actual_step": 50,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 9.096262386684739,
+      "filter_latencies_ms": [
+        14.507700005196966
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 73.89758296775729,
+      "comparative_tgt_tilt_at_switch": 63.099163696855555,
+      "trial": 2
+    },
+    {
+      "switch_step": 50,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 349,
+      "max_torque_nm": 0.7668368733293238,
+      "min_height_m": 0.1128656488945208,
+      "max_tilt_deg": 8.03659662375668,
+      "switched": true,
+      "switch_actual_step": 50,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 8.03659662375668,
+      "filter_latencies_ms": [
+        17.16080000187503
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 57.56988250594878,
+      "comparative_tgt_tilt_at_switch": 31.39428738802323,
+      "trial": 3
+    },
+    {
+      "switch_step": 50,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 349,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.0912572029709991,
+      "max_tilt_deg": 70.84504220977243,
+      "switched": true,
+      "switch_actual_step": 50,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 9.1382563157171,
+      "filter_latencies_ms": [
+        16.89310000074329
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 73.89082021410161,
+      "comparative_tgt_tilt_at_switch": 61.86980952996756,
+      "trial": 4
+    },
+    {
+      "switch_step": 60,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 339,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.09373045693587176,
+      "max_tilt_deg": 62.77370498324365,
+      "switched": true,
+      "switch_actual_step": 60,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 9.558176010390998,
+      "filter_latencies_ms": [
+        14.261900003475603
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 70.38370883744658,
+      "comparative_tgt_tilt_at_switch": 54.85866957236162,
+      "trial": 0
+    },
+    {
+      "switch_step": 60,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 339,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.09024865563059721,
+      "max_tilt_deg": 53.94301510585644,
+      "switched": true,
+      "switch_actual_step": 60,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 16.697142365047082,
+      "filter_latencies_ms": [
+        13.670099993760232
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 74.69834878225552,
+      "comparative_tgt_tilt_at_switch": 63.36543087283305,
+      "trial": 1
+    },
+    {
+      "switch_step": 60,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 338,
+      "max_torque_nm": 0.9487131387339603,
+      "min_height_m": 0.09213152497259579,
+      "max_tilt_deg": 54.832693230126225,
+      "switched": true,
+      "switch_actual_step": 61,
+      "switch_delay": 1,
+      "filter_checks": 2,
+      "filter_vetoes": 1,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 13.155830325883827,
+      "filter_latencies_ms": [
+        17.58469999913359,
+        14.247399994928855
+      ],
+      "veto_reasons": [
+        [
+          60,
+          "target not better: tgt=67.8\u00b0 vs cur=66.4\u00b0"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 74.03867735035932,
+      "comparative_tgt_tilt_at_switch": 61.63403691203562,
+      "trial": 2
+    },
+    {
+      "switch_step": 60,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 339,
+      "max_torque_nm": 0.8492806953584662,
+      "min_height_m": 0.11159203682107742,
+      "max_tilt_deg": 10.530516152428522,
+      "switched": true,
+      "switch_actual_step": 60,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 10.530516152428522,
+      "filter_latencies_ms": [
+        15.07119999587303
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 75.72261872660307,
+      "comparative_tgt_tilt_at_switch": 59.42569517493746,
+      "trial": 3
+    },
+    {
+      "switch_step": 60,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 339,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08757726700243874,
+      "max_tilt_deg": 59.703633639804785,
+      "switched": true,
+      "switch_actual_step": 60,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 12.17758313911529,
+      "filter_latencies_ms": [
+        12.258700000529643
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 80.60176601866239,
+      "comparative_tgt_tilt_at_switch": 68.31827022510784,
+      "trial": 4
+    },
+    {
+      "switch_step": 70,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 327,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08559022338364776,
+      "max_tilt_deg": 65.85254262297016,
+      "switched": true,
+      "switch_actual_step": 72,
+      "switch_delay": 2,
+      "filter_checks": 3,
+      "filter_vetoes": 2,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 36.76405998471615,
+      "filter_latencies_ms": [
+        6.105199994635768,
+        6.192299995745998,
+        11.054800001147669
+      ],
+      "veto_reasons": [
+        [
+          70,
+          "target early stop: tilt=76.4\u00b0 h=104mm"
+        ],
+        [
+          71,
+          "target early stop: tilt=70.4\u00b0 h=95mm"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 76.56053106557886,
+      "comparative_tgt_tilt_at_switch": 64.42233159999479,
+      "trial": 0
+    },
+    {
+      "switch_step": 70,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 328,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.09197519113148059,
+      "max_tilt_deg": 60.80208668501053,
+      "switched": true,
+      "switch_actual_step": 71,
+      "switch_delay": 1,
+      "filter_checks": 2,
+      "filter_vetoes": 1,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 35.01615588129737,
+      "filter_latencies_ms": [
+        5.2973999991081655,
+        12.302499999350403
+      ],
+      "veto_reasons": [
+        [
+          70,
+          "target early stop: tilt=70.1\u00b0 h=101mm"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 77.20607462353838,
+      "comparative_tgt_tilt_at_switch": 56.84550637372053,
+      "trial": 1
+    },
+    {
+      "switch_step": 70,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 329,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08981034789186795,
+      "max_tilt_deg": 59.270167881578054,
+      "switched": true,
+      "switch_actual_step": 70,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 10.99038028726482,
+      "filter_latencies_ms": [
+        13.453400002617855
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 71.23968003670217,
+      "comparative_tgt_tilt_at_switch": 58.641612528373265,
+      "trial": 2
+    },
+    {
+      "switch_step": 70,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 329,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08664540947904298,
+      "max_tilt_deg": 66.27934896967882,
+      "switched": true,
+      "switch_actual_step": 70,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 18.246338954002653,
+      "filter_latencies_ms": [
+        11.458000000857282
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 72.06890274805319,
+      "comparative_tgt_tilt_at_switch": 52.410918291087974,
+      "trial": 3
+    },
+    {
+      "switch_step": 70,
+      "from": "walking",
+      "to": "standing",
+      "fell": true,
+      "fell_at_step": 79,
+      "steps_after_switch": 2,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.061432823287361535,
+      "max_tilt_deg": 76.88301079038223,
+      "switched": true,
+      "switch_actual_step": 77,
+      "switch_delay": 7,
+      "filter_checks": 8,
+      "filter_vetoes": 7,
+      "emergency_forced": true,
+      "pre_switch_tilt_max_deg": 48.09710047373137,
+      "filter_latencies_ms": [
+        5.043999997724313,
+        4.3664999975590035,
+        4.063500004122034,
+        2.9808999970555305,
+        3.1243000048561953,
+        2.462999997078441,
+        1.7239000007975847,
+        1.491400005761534
+      ],
+      "veto_reasons": [
+        [
+          70,
+          "target early stop: tilt=72.6\u00b0 h=106mm"
+        ],
+        [
+          71,
+          "target early stop: tilt=72.0\u00b0 h=98mm"
+        ],
+        [
+          72,
+          "target early stop: tilt=75.8\u00b0 h=108mm"
+        ],
+        [
+          73,
+          "target early stop: tilt=73.7\u00b0 h=108mm"
+        ],
+        [
+          74,
+          "target early stop: tilt=71.7\u00b0 h=102mm"
+        ],
+        [
+          75,
+          "target early stop: tilt=71.1\u00b0 h=70mm"
+        ],
+        [
+          76,
+          "target early stop: tilt=77.4\u00b0 h=76mm"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 76.0300399870299,
+      "comparative_tgt_tilt_at_switch": 70.63204993133337,
+      "trial": 4
+    },
+    {
+      "switch_step": 80,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 319,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08632794138770762,
+      "max_tilt_deg": 57.06422893892842,
+      "switched": true,
+      "switch_actual_step": 80,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 48.74156393073311,
+      "filter_latencies_ms": [
+        14.225499995518476
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 73.01482173820804,
+      "comparative_tgt_tilt_at_switch": 55.51548961837145,
+      "trial": 0
+    },
+    {
+      "switch_step": 80,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 319,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08126854163782042,
+      "max_tilt_deg": 70.45312187717673,
+      "switched": true,
+      "switch_actual_step": 80,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 64.19380553625443,
+      "filter_latencies_ms": [
+        9.857999997620936
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 74.42089730163974,
+      "comparative_tgt_tilt_at_switch": 56.86942581514972,
+      "trial": 1
+    },
+    {
+      "switch_step": 80,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 318,
+      "max_torque_nm": 0.7416463165155533,
+      "min_height_m": 0.1137268841560479,
+      "max_tilt_deg": 7.643234086748529,
+      "switched": true,
+      "switch_actual_step": 81,
+      "switch_delay": 1,
+      "filter_checks": 2,
+      "filter_vetoes": 1,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 7.643234086748529,
+      "filter_latencies_ms": [
+        18.23300000251038,
+        18.335200002184138
+      ],
+      "veto_reasons": [
+        [
+          80,
+          "target not better: tgt=52.9\u00b0 vs cur=13.0\u00b0"
+        ]
+      ],
+      "comparative_cur_tilt_at_switch": 45.452696181486445,
+      "comparative_tgt_tilt_at_switch": 35.49228555955732,
+      "trial": 2
+    },
+    {
+      "switch_step": 80,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 319,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08843772266967553,
+      "max_tilt_deg": 62.61076586310895,
+      "switched": true,
+      "switch_actual_step": 80,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 19.433156640009845,
+      "filter_latencies_ms": [
+        12.61299999896437
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 73.38831675817427,
+      "comparative_tgt_tilt_at_switch": 67.14300208919781,
+      "trial": 3
+    },
+    {
+      "switch_step": 80,
+      "from": "walking",
+      "to": "standing",
+      "fell": false,
+      "fell_at_step": null,
+      "steps_after_switch": 319,
+      "max_torque_nm": 0.9634015946604082,
+      "min_height_m": 0.08511515956294712,
+      "max_tilt_deg": 63.37033533503377,
+      "switched": true,
+      "switch_actual_step": 80,
+      "switch_delay": 0,
+      "filter_checks": 1,
+      "filter_vetoes": 0,
+      "emergency_forced": false,
+      "pre_switch_tilt_max_deg": 8.767007653315797,
+      "filter_latencies_ms": [
+        14.974800003983546
+      ],
+      "veto_reasons": [],
+      "comparative_cur_tilt_at_switch": 76.88380155489207,
+      "comparative_tgt_tilt_at_switch": 59.92288725268735,
+      "trial": 4
+    }
+  ]
+}

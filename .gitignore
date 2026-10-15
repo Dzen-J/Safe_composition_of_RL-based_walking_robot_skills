@@ -8,7 +8,7 @@ wheels/
 .python-version
 # uv.lock
 
-
+README.md
 
 # Virtual environments
 .venv
